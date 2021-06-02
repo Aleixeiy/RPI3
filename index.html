@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- скрипт карты -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+</head>
+<body id="body" onload="init()">
+	<img class="bg"></img>
+	
+	<header>
+		<input class="change" type="button" value="" name="change" onclick="changeImage()">
+		<input class="celsius active_temp" type="button" value="°C" name="celsius" onclick="celsius_click()">
+        <input class="fahrenheit" type="button" value="°F" name="fahrenheit" onclick="fahrenheit_click()">
+		<input class="language" type="button" value="ru/en" name="language" onclick="language_click()">
+		<input class="request" type="text" value="" name="request" id="request">
+		<input class="search" type="button" value="" name="search" onclick="changeWeather()" id="search">
+        <img id="micro" class="micro" src="./pics/micro.svg" alt="Тут должен быть микрофон"onclick="recognize()" >
+	</header>
+
+	<section class="placeDateAndTime">
+		<h1 class="place" align="center" id="place">МЕСТО</h1>
+		<h2 id="dateAndTime" class="dateAndTime" align="center">
+			ДАТА И ВРЕМЯ
+		</h2>
+	</section>
+		
+	<main class="weather">
+		<section class="today">
+			<img id="weatherPic" class="weatherImageToday" src="pics/weather/clouds.svg" alt="Тут должна быть красивая анимация">
+			<div id="tempriture" class="tempritureToday">00°</div>
+			<div class="additionalInformation">
+				<div id="cload" class="cload">ОПИСАНИЕ</div>
+				<div id="feelAs" class="feelAs">ЧУВСТВУЕТСЯ КАК</div>
+				<div id="wind" class="wind">ВЕТЕР</div>
+				<div id="humidity" class="humidity">ВЛАЖНОСТЬ</div>
+			</div>
+		</section>
+		
+		<div>
+			<section class="next">
+				<div id="day1" class="dayOfTheWeek">ДЕНЬ НЕДЕЛИ</div>
+				<div id="tempritureDay1" class="tempriture">00°</div>
+				<img id="weatherPicDay1" class="weatherImage" src="" alt="Тут должна быть красивая анимация">
+			</section>
+			<section class="next">
+				<div id="day2" class="dayOfTheWeek">ДЕНЬ НЕДЕЛИ</div>
+				<div id="tempritureDay2" class="tempriture">00°</div>
+				<img id="weatherPicDay2" class="weatherImage" src="" alt="Тут должна быть красивая анимация">
+			</section>
+			<section class="next">
+				<div id="day3" class="dayOfTheWeek">ДЕНЬ НЕДЕЛИ</div>
+				<div id="tempritureDay3" class="tempriture">00°</div>
+				<img id="weatherPicDay3" class="weatherImage" src="" alt="Тут должна быть красивая анимация">
+		</section>
+		</div>
+	</main>
+	<div id="map">
+	</div>
+        <div id="coords">
+            <p id="lat">Широта</p>
+            <p id="lon">Долгота</p>
+        </div>
+</body>
+
+<script src="scripts/script.js"></script>
+
+</html>

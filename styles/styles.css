@@ -1,0 +1,255 @@
+*, *:hover, *:focus {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0px solid #FFFFFF;
+	outline: none;
+}
+
+body {
+	width: 1848px;
+	height: 945px;
+	background-color: rgba(0, 0, 0, 0.33);
+	background-image: url(../pics/defaultBackground.jpg);
+	background-size: cover;
+	transition: background-image 1s ease-in-out;
+	color: #FFFFFF;
+}
+
+.bg {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(0, 0, 0, 0.5);
+	background-size: cover;
+	z-index: -1;
+}
+
+/* header */
+
+.change {
+	position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background-image: url(../pics/change.jpg);
+    background-size: cover;
+    border: none;
+    filter: grayscale(100%);
+    margin-left: 10px;
+    margin-top: 10px;
+	margin-right: 100px;
+    cursor: pointer;
+}
+
+.language {
+	position: absolute;
+    width: 50px;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+	margin-left: 200px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.change:hover {
+    filter: inherit;
+}
+
+.celsius{
+	position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    filter: grayscale(100%);
+    margin-top: 10px;
+	margin-left: 100px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fahrenheit {
+	position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    filter: grayscale(100%);
+    margin-top: 10px;
+	margin-left: 150px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.active_temp {
+    filter: inherit;
+    background-color: rgb(200, 200, 50);
+}
+
+.request {
+	position: absolute;
+	font-size: 22px;
+	width: 274px;
+	height: 44px;
+	border-radius: 10px 0 0 10px;
+	margin-top: 40px;
+	margin-left: 1400px;
+	padding-left: 10px;
+}
+
+.search {
+    width: 44px;
+    height: 44px;
+    border-radius: 0 10px 10px 0;
+    background-image: url(../pics/search.jpg);
+    background-size: cover;
+    border: none;
+    filter: grayscale(100%);
+    margin-top: 40px;
+    margin-left: 1680px;
+    cursor: pointer;
+}
+
+.search:hover {
+    filter: inherit;
+}
+
+/* header */
+
+
+
+
+/* place date time*/
+
+.placeDateAndTime {
+	margin-top: 150px;
+	margin-left: -200px;
+}
+
+.place {
+	font-family: monospace;
+	font-size: 44px;
+}
+
+.dateAndTime {
+	font-family: monospace;
+	font-size: 29px;
+}
+
+/* place date time*/
+
+
+
+
+/* main */
+
+.weather {
+	display: flex;
+}
+
+/* main */
+
+
+
+
+
+/* today */
+
+.today {
+	display: flex;
+	flex-direction: row;
+	margin-top: 150px;
+}
+
+.tempritureToday {
+	width: 350px;
+	font-family: sans-serif;
+	font-size: 306px;
+	margin-left: 90px;
+	text-align: center;
+}
+
+.weatherImageToday {
+	position: absolute;
+	width: 306px;
+	margin-left: 550px;
+	margin-top: -150px;
+}
+
+.additionalInformation {
+	width: 370px;
+	height: 137px;
+	font-family: sans-serif;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-top: 170px;
+}
+
+/* today */
+
+
+
+
+/* 3 days */
+
+.next {
+	margin-top: 40px;
+	margin-left: 110px;
+}
+
+.dayOfTheWeek {
+	font-family: sans-serif;
+	font-size: 30px;
+}
+
+.tempriture {
+	font-family: sans-serif;
+	font-size: 80px;
+}
+
+.weatherImage {
+	position: absolute;
+	width: 165px;
+	margin-top: -135px;
+	margin-left: 100px;
+}
+
+/* 3 days */
+
+#map {
+        position: absolute;
+        border-radius: 30px;
+        left: 1320px;
+        top: 300px;
+	width: 400px;
+	height: 400px;
+}
+
+#coords {
+    position: absolute;
+    left: 1370px;
+    top: 750px;
+    font-size: 30px;
+}
+
+.micro {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 47px;
+    left: 1639px;
+}
+
+.micro:hover {
+    cursor: pointer;
+}
+
+.micro_active {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 42px;
+    left: 1634px;
+}
